@@ -19,7 +19,7 @@ Contenido:
 
 •	covid_19_clean_complete.csv - Día a día, no. de casos por país (No tiene datos a nivel de condado/estado/provincia)
 
-•	country_wise_latest.csv - no. de los casos mas recientes por país
+•	country_wise_latest.csv - no. de los casos más recientes por país
 
 •	day_wise.csv - no. de casos por día (No tiene datos a nivel de país)
 

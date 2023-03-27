@@ -23,4 +23,6 @@ Contenido:
 
 •	day_wise.csv - no. de casos por día (No tiene datos a nivel de país)
 
-•	usa_county_wise.csv - Nivel de registro no. de los casos día a día worldometer_data.csv: datos más recientes de https://www.worldometers.info/
+•	usa_county_wise.csv - Nivel de registro no. de los casos día a día 
+
+•	worldometer_data.csv: datos más recientes de https://www.worldometers.info/

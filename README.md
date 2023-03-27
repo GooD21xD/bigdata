@@ -1,5 +1,5 @@
 # bigdata
-proyecto de bigdata usando aws (S3, Athena, Glue)
+proyecto de bigdata usando aws (S3, Athena, Glue) - Carlos Flores Bernaola
 
 Contexto
 

@@ -14,7 +14,7 @@ Contexto:
 
 •	Al 30 de enero de 2020, se han confirmado aproximadamente 8243 casos
 
-Contenido
+Contenido:
 
 •	full_grouped.csv - Día a día, no. de casos por país (tiene datos a nivel de condado/estado/provincia)
 

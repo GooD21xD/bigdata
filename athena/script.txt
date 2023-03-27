@@ -1,0 +1,59 @@
+-- Creamos la base de datos
+CREATE DATABASE IF NOT EXISTS landing LOCATION 's3://datalake-prueba-0323/landing/';
+CREATE DATABASE IF NOT EXISTS bronze LOCATION 's3://datalake-prueba-0323/bronze/';
+CREATE DATABASE IF NOT EXISTS silver LOCATION 's3://datalake-prueba-0323/silver/';
+CREATE DATABASE IF NOT EXISTS golden LOCATION 's3://datalake-prueba-0323/golden/';
+
+
+--creamos la tabla en landing
+CREATE EXTERNAL TABLE landing.usa_county_wise(
+UID STRING,
+iso2 STRING,
+iso3 STRING,
+code3 STRING,
+FIPS STRING,
+Admin2 STRING,
+Province_State STRING,
+Country_Region STRING,
+Lat STRING,
+Long_ STRING,
+Combined_Key STRING,
+Date STRING,
+Confirmed STRING,
+Deaths STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+STORED AS TEXTFILE
+LOCATION 's3://datalake-prueba-0323/landing/usa_county_wise/'
+TBLPROPERTIES(
+    'skip.header.line.count'='1',
+    'store.charset'='ISO-8859-1', 
+    'retrieve.charset'='ISO-8859-1'
+)
+
+
+--creamos la tabla en bronze
+CREATE EXTERNAL TABLE bronze.usa_county_wise(
+UID STRING,
+iso2 STRING,
+iso3 STRING,
+code3 STRING,
+FIPS STRING,
+Admin2 STRING,
+Province_State STRING,
+Country_Region STRING,
+Lat STRING,
+Long_ STRING,
+Combined_Key STRING,
+Date STRING,
+Confirmed STRING,
+Deaths STRING
+)
+STORED AS PARQUET
+LOCATION 's3://datalake-prueba-0323/bronze/usa_county_wise/'
+TBLPROPERTIES(
+    'store.charset'='ISO-8859-1', 
+    'retrieve.charset'='ISO-8859-1'
+);

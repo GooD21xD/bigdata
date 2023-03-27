@@ -7,6 +7,7 @@ Contexto
 •	El virus ha mostrado evidencia de transmisión de persona a persona.
 •	La tasa de transmisión (tasa de infección) pareció aumentar a mediados de enero de 2020
 •	Al 30 de enero de 2020, se han confirmado aproximadamente 8243 casos
+
 Contenido
 •	full_grouped.csv - Día a día, no. de casos por país (tiene datos a nivel de condado/estado/provincia)
 •	covid_19_clean_complete.csv - Día a día, no. de casos por país (No tiene datos a nivel de condado/estado/provincia)
